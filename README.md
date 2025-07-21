@@ -2,6 +2,11 @@
 
 A comprehensive web-based machine learning system for predicting student final grades based on academic performance, study habits, and demographic factors. The system uses a 40% pass mark threshold and provides personalized recommendations for academic improvement.
 
+## 📸 Screenshots
+
+<img width="516" height="749" alt="Screenshot From 2025-07-21 22-54-27" src="https://github.com/user-attachments/assets/9248beb3-f343-42af-9067-fe2a894c6f1f" />
+
+
 ## 🎯 Features
 
 - **Accurate Grade Prediction**: ML-powered predictions using Random Forest and Gradient Boosting algorithms
@@ -96,32 +101,7 @@ Before installation, ensure you have:
    npm run dev
    \`\`\`
 
-## 📁 Project Structure
 
-\`\`\`
-student-grade-prediction/
-├── app/
-│   ├── api/
-│   │   └── predict/
-│   │       └── route.ts          # Prediction API endpoint
-│   ├── globals.css               # Global styles
-│   ├── layout.tsx               # Root layout
-│   └── page.tsx                 # Main application page
-├── components/
-│   └── ui/                      # shadcn/ui components
-├── scripts/
-│   ├── advanced_model_development.py    # ML model training
-│   ├── improved_model_analysis.py       # Model analysis
-│   ├── model_validation.py              # Model validation
-│   └── pass_mark_model_analysis.py      # Pass mark analysis
-├── lib/
-│   └── utils.ts                 # Utility functions
-├── hooks/                       # Custom React hooks
-├── package.json                 # Node.js dependencies
-├── tailwind.config.ts          # Tailwind configuration
-├── tsconfig.json               # TypeScript configuration
-└── README.md                   # This file
-\`\`\`
 
 ## 🔧 Configuration
 
@@ -225,86 +205,6 @@ The prediction algorithm can be customized in \`app/api/predict/route.ts\`:
 - **Cross-validation**: 5-fold stratified validation
 - **Feature Importance**: Academic scores (highest), study habits, resource usage
 
-## 🚀 Deployment
-
-### Vercel Deployment (Recommended)
-
-1. **Push code to GitHub repository**
-2. **Connect to Vercel**:
-   - Visit [vercel.com](https://vercel.com)
-   - Import your GitHub repository
-   - Deploy with default settings
-3. **Access your deployed application**
-
-### Alternative Deployment Options
-
-- **Netlify**: Static site deployment
-- **Railway**: Full-stack deployment
-- **Heroku**: Container-based deployment
-- **AWS/GCP/Azure**: Cloud platform deployment
-
-## 🔍 API Reference
-
-### Prediction Endpoint
-
-\`\`\`
-POST /api/predict
-\`\`\`
-
-#### Request Body
-\`\`\`json
-{
-  "age": 20,
-  "gender": "Male",
-  "family_income": 500000,
-  "parent_education": "Bachelor",
-  "employment_status": "Unemployed",
-  "study_hours_per_week": 15,
-  "library_visits_per_month": 8,
-  "online_resource_usage": "Often",
-  "ct1_score": 8,
-  "ct2_score": 9,
-  "assignment_score": 15,
-  "presentation_score": 12,
-  "midterm_score": 25,
-  "final_score": 35
-}
-\`\`\`
-
-#### Response
-\`\`\`json
-{
-  "predicted_grade": "B+",
-  "confidence": 0.78,
-  "grade_probabilities": {
-    "A+": 0.05,
-    "A": 0.12,
-    "A-": 0.18,
-    "B+": 0.78,
-    "B": 0.15,
-    "...": "..."
-  },
-  "recommendations": [
-    "👍 Excellent work! You're comfortably above the pass mark",
-    "⏰ Consider increasing study time to 18-20 hours per week"
-  ],
-  "score_breakdown": {
-    "academic_score": 72,
-    "study_impact": 18,
-    "resource_impact": 12,
-    "socio_impact": 3,
-    "total_score": 68,
-    "percentage": 68
-  },
-  "feature_analysis": {
-    "study_efficiency": "High",
-    "academic_trend": "Improving",
-    "resource_utilization": "Excellent"
-  },
-  "pass_status": "PASS"
-}
-\`\`\`
-
 ## 🛠️ Troubleshooting
 
 ### Common Issues
@@ -312,7 +212,7 @@ POST /api/predict
 #### Installation Problems
 - **Node.js version**: Ensure you're using Node.js 18+
 - **Package conflicts**: Delete \`node_modules\` and \`package-lock.json\`, then reinstall
-- **Python dependencies**: Use virtual environment for Python packages
+- **Python dependencies**: Use a virtual environment for Python packages
 
 #### Runtime Errors
 - **API errors**: Check browser console for detailed error messages
@@ -358,23 +258,6 @@ The system creates 15+ engineered features from raw inputs:
 - **Confusion Matrix**: Detailed per-class performance analysis
 - **Feature Importance**: Identifies most predictive factors
 
-## 🤝 Contributing
-
-### Development Setup
-
-1. **Fork the repository**
-2. **Create a feature branch**: \`git checkout -b feature-name\`
-3. **Make changes** and test thoroughly
-4. **Run validation scripts** to ensure model performance
-5. **Submit a pull request** with detailed description
-
-### Code Standards
-
-- **TypeScript**: Use strict type checking
-- **ESLint**: Follow configured linting rules
-- **Prettier**: Maintain consistent code formatting
-- **Testing**: Add tests for new features
-
 ## 📄 License
 
 This project is licensed under the MIT License. See the LICENSE file for details.
@@ -387,14 +270,6 @@ This project is licensed under the MIT License. See the LICENSE file for details
 - **UI Components**: shadcn/ui component library
 - **Styling**: Tailwind CSS framework
 
-## 📞 Support
-
-For technical support or questions:
-
-1. **Documentation**: Review this README and inline code comments
-2. **Issues**: Create GitHub issues for bugs or feature requests
-3. **Discussions**: Use GitHub Discussions for general questions
-4. **Community**: Join relevant developer communities
 
 ---
 
